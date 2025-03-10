@@ -33,7 +33,7 @@ body {
 }
 
 .box {
-  max-width: 42rem;
+  max-width: 40rem;
   padding: 3rem;
   background-image: radial-gradient(
     circle 500px at 50% -30%,
@@ -144,4 +144,12 @@ body {
 }
 .hidden {
   display: none;
+}
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .box {
+    padding: 2rem;
+  }
 }

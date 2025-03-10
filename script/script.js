@@ -4,14 +4,18 @@ const ratingNumberContainer = document.querySelectorAll(
   ".rating-number-container"
 );
 const selectedRating = document.querySelector("#selected-rating");
-
 const submitButton = document.querySelector(".submit-btn");
+let currentRating;
 let rated = false;
 let rating = 0;
 let ratingElement = new Array();
 for (let i = 0; i < 5; i++) {
   ratingElement[i] = document.querySelector(`#rating-${i + 1}`);
   ratingElement[i].addEventListener("click", function () {
+    currentRating = i + 1;
+    console.log(rating);
+    console.log(currentRating);
+
     if (rated === true) {
       for (let i = 0; i < 5; i++) {
         if (i + 1 == rating) {
@@ -22,6 +26,7 @@ for (let i = 0; i < 5; i++) {
     }
     rated = true;
     rating = i + 1;
+
     ratingElement[i].style.backgroundColor = `orange`;
     ratingElement[i].style.color = `white`;
   });
