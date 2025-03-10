@@ -36,9 +36,9 @@ body {
   max-width: 40rem;
   padding: 3rem;
   background-image: radial-gradient(
-    circle 500px at 50% -30%,
-    hsl(214, 11%, 25%),
-    hsl(213, 19%, 18%),
+    circle 500px at 50% 10%,
+    hsl(213, 9%, 19%),
+    hsl(212, 20%, 15%),
     hsla(216, 12%, 8%, 0.709)
   );
 
