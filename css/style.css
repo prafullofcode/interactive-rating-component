@@ -35,12 +35,7 @@ body {
 .box {
   max-width: 40rem;
   padding: 3rem;
-  background-image: radial-gradient(
-    circle 500px at 50% 10%,
-    hsl(213, 9%, 19%),
-    hsl(212, 20%, 15%),
-    hsla(216, 12%, 8%, 0.709)
-  );
+  background: radial-gradient(at top, #232a34, #181e27);
 
   /* background-color: pink; */
   border-radius: 2rem;
@@ -67,11 +62,12 @@ body {
 
 .heading {
   color: var(--white);
+  font-size: 2.5rem;
 }
 
 .paragraph {
   color: var(--light-grey);
-  line-height: 145%;
+  line-height: 170%;
   font-weight: 400;
 }
 
