@@ -17,8 +17,6 @@ for (let i = 0; i < 5; i++) {
     console.log(currentRating);
 
     if (rated === true) {
-      // Check self click
-
       for (let i = 0; i < 5; i++) {
         if (i + 1 == rating) {
           ratingElement[i].style.backgroundColor = ` var(--dark-blue)`;
